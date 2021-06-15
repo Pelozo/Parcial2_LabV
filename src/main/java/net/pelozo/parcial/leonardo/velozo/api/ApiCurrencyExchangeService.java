@@ -60,7 +60,7 @@ public class ApiCurrencyExchangeService {
         return Float.parseFloat(valor.replace(",", "."));
     }
 
-    public float fallback(final Throwable t) {
-       return -1;
+    public Float fallback(final Throwable t) {
+       return -1F;
     }
 }
